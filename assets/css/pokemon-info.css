@@ -10,13 +10,10 @@
 }
 
 .backButton {
-    position: absolute;
-    margin: 1rem 1.5rem;
-    display: inline-block;
+    margin: 2.5rem 0 0 1.5rem;
     color: #fff;
     font-size: 1.7rem;
     text-decoration: none;
-    z-index: 2;
 }
 
 
@@ -29,7 +26,7 @@
 
 .pokemon .name {
     font-size: 1.5rem;
-    margin: 3.125rem 0 0 1.5rem;
+    margin: 2.5rem 0 0 1.5rem;
     max-width: 100%;
 }
 
@@ -51,26 +48,35 @@
 }
 
 .pokemon .detail {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centraliza apenas a imagem */
+    align-items: center;
     margin-top: 1rem;
+    z-index: 2;
 }
 
 .pokemon .detail img {
     max-width: 100%;
     height: auto;
-    max-height: 150px;
+    max-height: 200px;
+    margin-bottom: -50px; /* Valor negativo para sobrepor */
 }
-
 .pokemon .pokemonStats {
+    position: relative;
     background-color: #fff;
     font-size: .850rem;
     text-transform: capitalize;
     border-radius: 2rem 2rem 0 0;
     min-height: 70%;
+    padding-top: 60px;
+    z-index: 1;
 }
 
-.pokemon .pokemonStats h1, p {
+.pokemon .pokemonStats h1 {
+    margin: 1.5rem;
+}
+
+.pokemon .pokemonStats p {
     margin: 1.5rem;
 }
